@@ -18,6 +18,8 @@ changes to your code:
 command `autotest`.  RSpec expects to find code files under `lib/` and
 the corresponding spec files under `spec/`.
 
+# I have reached here on this assignment
+
 2. Initially, all tests are marked
 "pending", as indicated by the argument `:pending => true` in each
 `describe` block.  To start working on a question, remove this option:
