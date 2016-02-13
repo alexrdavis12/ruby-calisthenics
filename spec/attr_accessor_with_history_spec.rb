@@ -1,5 +1,5 @@
 require 'attr_accessor_with_history'
-require 'byebug'
+#require 'byebug'
 
 class TestClass1
   attr_accessor_with_history :foo
@@ -32,11 +32,11 @@ describe '#attr_accessor_with_history', :pending => true do
       expect(@subject.foo_history).to be == [nil, 3]
     end
   end
-  describe 'when a symbol is passed [10 points]' do
+  describe 'when a symbol is passed [10 points]',:pending => true do
     before(:each) { @subject = TestClass1.new }
     include_examples 'all cases'
   end
-  describe 'when a string is passed [10 points]' do
+  describe 'when a string is passed [10 points]',:pending => true do
     before(:each) { @subject = TestClass2.new }
     include_examples 'all cases'
   end
