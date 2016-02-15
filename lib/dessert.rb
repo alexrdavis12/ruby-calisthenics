@@ -1,4 +1,4 @@
-class Desert
+class Dessert
     def initialize(name, calories)
         @name = name
         @cals = calories

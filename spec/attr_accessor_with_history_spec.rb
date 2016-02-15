@@ -8,7 +8,7 @@ class TestClass2
   attr_accessor_with_history 'foo'
 end
 
-describe '#attr_accessor_with_history', :pending => true do
+describe '#attr_accessor_with_history' do
   shared_examples 'all cases' do
     it 'should define getter and setter [5 points]' do
       @subject.foo = 'xyz'
@@ -32,11 +32,11 @@ describe '#attr_accessor_with_history', :pending => true do
       expect(@subject.foo_history).to be == [nil, 3]
     end
   end
-  describe 'when a symbol is passed [10 points]',:pending => true do
+  describe 'when a symbol is passed [10 points]' do
     before(:each) { @subject = TestClass1.new }
     include_examples 'all cases'
   end
-  describe 'when a string is passed [10 points]',:pending => true do
+  describe 'when a string is passed [10 points]' do
     before(:each) { @subject = TestClass2.new }
     include_examples 'all cases'
   end
